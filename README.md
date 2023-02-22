@@ -1,2 +1,2 @@
 # 2.1_minitalk
-![Imgur](https://imgur.com/LPfJT0x)
+![Imgur](https://imgur.com/LPfJT0x.png)
