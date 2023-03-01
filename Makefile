@@ -66,8 +66,11 @@ $(BON_CLIENT): $(LIBFT) $(BON_CLIOBJS)
 $(BON_SERVER): $(LIBFT) $(BON_SEROBJS)
 	$(CC) -o $(BON_SERVER) $(CFLAGS) $(BON_SEROBJS) $(ARCS)
 
-$(LIBFT):
-	make -C $(LIBFT_DIR)
+$(LIBFT): $(LIBDIR)
+	git clone https://github.com/aaron-22766/libft.git $(LIBFT_DIR); make -C $(LIBFT_DIR)
+
+$(LIBDIR):
+	mkdir -p $(LIBDIR)
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c | $(OBJDIR)
 	$(CC) -c $(CFLAGS) $< -o $@
@@ -88,6 +91,9 @@ clean:
 fclean: clean
 	$(RM) $(RMFLAGS) $(CLIENT) $(SERVER) $(BON_CLIENT) $(BON_SERVER)
 	make -C $(LIBFT_DIR) fclean
+
+libclean: fclean
+	$(RM) $(RMFLAGS) $(LIBDIR)
 
 re: fclean all
 

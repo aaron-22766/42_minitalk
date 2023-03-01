@@ -17,7 +17,7 @@
 /*                                  INCLUDES                                  */
 /* ************************************************************************** */
 
-# include "../lib/libft/libft.h"
+# include "../lib/libft/src/libft.h"
 # include <unistd.h>
 # include <signal.h>
 
