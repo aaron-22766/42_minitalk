@@ -6,7 +6,7 @@
 /*   By: arabenst <arabenst@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/08 13:23:58 by arabenst          #+#    #+#             */
-/*   Updated: 2023/02/22 12:56:36 by arabenst         ###   ########.fr       */
+/*   Updated: 2023/03/13 15:52:03 by arabenst         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 /*                                  INCLUDES                                  */
 /* ************************************************************************** */
 
-# include "../lib/libft/src/libft.h"
+# include "../lib/libft/libft.h"
 # include <unistd.h>
 # include <signal.h>
 
