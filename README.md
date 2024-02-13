@@ -22,6 +22,8 @@
 
 The purpose of this project is to code a small data exchange program using UNIX signals. It is an introductory project for the bigger UNIX projects that will appear later on in the cursus.
 
+![play demo](https://github.com/aaron-22766/bin/blob/ad6211b063e040868fdcba9a40f7e4f7fdf4e42f/gifs/minitalk.gif)
+
 ## 🛠 Usage
 
 ### Requirements
