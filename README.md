@@ -22,6 +22,8 @@
 
 The purpose of this project is to code a small data exchange program using UNIX signals. It is an introductory project for the bigger UNIX projects that will appear later on in the cursus.
 
+![play demo](https://github.com/aaron-22766/bin/blob/ad6211b063e040868fdcba9a40f7e4f7fdf4e42f/gifs/minitalk.gif)
+
 ## 🛠 Usage
 
 ### Requirements
@@ -30,13 +32,14 @@ The game is written in C language and thus needs the **`gcc` compiler** and some
 
 ### Instructions
 
-Execute the binaries on from different shells:
+Execute the binaries from different shells. First, start the server.
 ```shell
 $> make
 $> ./server
 Server PID: 4242
 ```
-Give the server pid as the first argument to the client followed by the message to send
+The server will print its process id to the output. Use it as the first argument to the client and as teh second argument pass the message you want to send.
 ```shell
 $> ./client 4242 "some_message"
 ```
+You will see that the server will receive the message and print it to its output. Since the subject states to print the message **after** the server received it but with large messages the communication takes a lot of time, the server will store the incoming characters in a buffer and only print it once it's full or it receives a NUL-character as the indication for the end of the message.
